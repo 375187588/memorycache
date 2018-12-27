@@ -13,7 +13,7 @@ namespace MP
 	}
 	void* operator new[](size_t nSize)
 	{
-		return MemoryMgr::instance.alloc(nSize);
+		return MemoryMgr::instance().alloc(nSize);
 	}
 	void operator delete[](void * pMem)
 	{
